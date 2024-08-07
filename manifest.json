@@ -12,13 +12,18 @@
     "overrides": "overrides",
     "manifestVersion": 1,
     "version": "1.0",
-    "author": "GregTech Community Pack Dev Team",
+    "author": "Chudcel Norwood",
     "externalDeps": [],
-    "name": "GregTech Community Pack",
+    "name": "Warforge 2: Warcrimes editon",
     "files": [
         {
             "projectID": 557549,
             "fileID": 5471944,
+            "required": true
+        },
+        {
+            "projectID": 650242,
+            "fileID": 5272359,
             "required": true
         },
         {
