@@ -1,6 +1,7 @@
 
 
 import gregtech.api.unification.material.Material;
+import gregtech.api.unification.material.event.MaterialEvent;
 import gregtech.api.GregTechAPI;
 import gregtech.api.fluids.attribute.FluidAttributes;
 import gregtech.api.fluids.FluidBuilder;
