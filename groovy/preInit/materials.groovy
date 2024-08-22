@@ -1,5 +1,3 @@
-
-
 import gregtech.api.unification.material.Material;
 import gregtech.api.unification.material.event.MaterialEvent;
 import gregtech.api.GregTechAPI;
@@ -29,10 +27,10 @@ event_manager.listen { MaterialEvent event ->
     material('brass').addFlags('generate_spring')
 }
 
-/* mods.gregtech.materialEvent {
+mods.gregtech.materialEvent {
     def Desh = materialBuilder(32002, "desh")
             .color(0xC40000).iconSet('METALLIC')
             .flags("generate_plate", "generate_foil")
-            .components(Boron *2, Uranium, Lanthanum, Cerium, Cobalt, Lithium, Neodymium, Niobium)
+            .components(Boron *2, Uranium235, Lanthanum, Cerium, Cobalt, Lithium, Neodymium, Niobium)
             .build()
-}*/
+}
