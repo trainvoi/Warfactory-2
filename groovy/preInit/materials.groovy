@@ -22,15 +22,16 @@ event_manager.listen { MaterialEvent event ->
             .components(material('certus_quartz'), material('nether_quartz'), material('redstone'))
             .build()
 
-    new Material.Builder(32001, resource('gcp', 'desh'))
-            .ingot()
-            .color(0xC40000).iconSet('METALLIC')
-            .components(Boron *2, Uranium, Lanthanum, Cerium, Cobalt, Lithium, Neodymium, Niobium)
-            .build()
-
-
     material('certus_quartz').addFlags('generate_rod', 'generate_bolt_screw')
     material('nether_quartz').addFlags('generate_rod', 'generate_bolt_screw')
     material('iron').addFlags('generate_dense')
     material('brass').addFlags('generate_spring')
 }
+
+/* mods.gregtech.materialEvent {
+    def Desh = materialBuilder(32002, "desh")
+            .color(0xC40000).iconSet('METALLIC')
+            .flags("generate_plate", "generate_foil")
+            .components(Boron *2, Uranium, Lanthanum, Cerium, Cobalt, Lithium, Neodymium, Niobium)
+            .build()
+}*/
