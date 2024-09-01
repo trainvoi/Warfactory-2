@@ -203,7 +203,7 @@ crafting.shapedBuilder().name('fluid_interfaces_interface')
         .key('G', ore('blockGlass'))
         .key('A', item('appliedenergistics2:material', 44))
         .key('F', item('appliedenergistics2:material', 43))
-        .key('C', metaitem('electric.pump.Zpm'))
+        .key('C', metaitem('electric.pump.zpm'))
         .mirrored()
         .register()
 
