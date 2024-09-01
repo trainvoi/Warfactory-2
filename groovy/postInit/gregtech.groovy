@@ -44,3 +44,13 @@ recipemap('assembler').recipeBuilder()
     .inputs(metaitem('pipeNormalItemBrass'))
     .outputs(metaitem('cover.item.voiding'))
     .duration(100).EUt(30).buildAndRegister();
+
+//Regate Multismelter to LV
+crafting.shapedBuilder().name('multifurnace')
+        .output(metaitem('multi_furnace'))
+        .matrix('FFF', 'CHC', 'PCP')
+        .key('F', item('minecraft:furnace'))
+        .key('C', ore('circuitLv'))
+        .key('H', item('gregtech:metal_casing', 2))
+        .key('P', metaitem('cableGtSingleTin'))
+        .register()
