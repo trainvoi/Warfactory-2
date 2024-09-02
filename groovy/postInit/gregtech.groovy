@@ -66,3 +66,26 @@ crafting.shapedBuilder().name('distillationtowerrecipe')
         .key('H', ore('pipeLargeFluidStainlessSteel'))
         .key('P', metaitem('electric.pump.hv'))
         .register()
+
+//Cleanroom
+crafting.remove('gregtech:cleanroom')
+crafting.shapedBuilder().name('cleanroom')
+        .output(metaitem('cleanroom'))
+        .matrix('GGG', 'HPH', 'CFC')
+        .key('F', item('gregtech:meta_item_1', 128))
+        .key('C', ore('circuitMv'))
+        .key('H', item('gregtech:meta_rotor', 324))
+        .key('P', item('gregtech:mte', 987))
+        .key('G', item('gregtech:meta_item_1', 291))
+        .register()
+
+// Plascrete Cabal
+mods.gregtech.assembler.removeByInput(48, [metaitem('frameSteel'), metaitem('platePlastic') * 6], [fluid('concrete') * 144 * 144])
+//New Plascrete
+recipemap('assembler').recipeBuilder()
+        .fluidInputs(fluid('concrete') * 144)
+        .inputs(item('gregtech:meta_plate', 1012) * 6)
+        .inputs(item('gregtech:meta_block_frame_20', 4) * 1)
+        .outputs(item('gregtech:cleanroom_casing') * 4)
+        .duration(40)
+        .EUt(128).buildAndRegister();
