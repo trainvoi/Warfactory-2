@@ -1,5 +1,6 @@
 
 //LV
+/*
 crafting.remove('openmodularturrets:turret_base_0_vanilla')
 crafting.shapedBuilder().name('basicturret')
     .output(item('openmodularturrets:turret_base'))
@@ -63,3 +64,4 @@ crafting.shapedBuilder().name('basicturret_chamber')
     .key('F', ore('screwSteel'))
     .key('R', ore('ringSteel'))
     .register()
+    */
