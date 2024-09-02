@@ -54,3 +54,15 @@ crafting.shapedBuilder().name('multifurnace')
         .key('H', item('gregtech:metal_casing', 2))
         .key('P', metaitem('cableGtSingleTin'))
         .register()
+
+
+//Distillation Trollage
+crafting.remove('gcyl:gcyl_distillation_tower')
+crafting.shapedBuilder().name('distillationtowerrecipe')
+        .output(metaitem('distillation_tower'))
+        .matrix('CHC', 'PFP', 'CHC')
+        .key('F', ore('frameGtStainlessSteel'))
+        .key('C', ore('circuitHv'))
+        .key('H', ore('pipeLargeFluidStainlessSteel'))
+        .key('P', metaitem('electric.pump.hv'))
+        .register()
