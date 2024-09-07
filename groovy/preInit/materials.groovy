@@ -48,7 +48,7 @@ event_manager.listen { MaterialEvent event ->
 
     new Material.Builder(32006, resource('gcp', 'trichlorosilane'))
                 .liquid()
-                .components(material('hydrogen'), material('chlorine') * 3, material('silicon'))
+                .components( material('silicon'), material('hydrogen'), material('chlorine') * 3)
                 .color(0x77979e)
                 .build();
 
